@@ -48,7 +48,7 @@ public class Pembelian {
             System.out.println("1. Tampilkan Daftar Penerbangan\n2. Beli Tiket\n3. Tampilkan Pesanan Tiket\n4. Exit");
             System.out.print("Pilih menu: ");
             int opsi = scanner.nextInt();
-            scanner.nextLine(); // Konsumsi newline
+            scanner.nextLine(); 
 
             if (opsi == 1) {
                 daftarPenerbangan.forEach(Penerbangan::tampilkanInfo);
@@ -64,7 +64,7 @@ public class Pembelian {
 
                 System.out.print("Pilih nomor penerbangan (1-" + daftarPenerbangan.size() + "): ");
                 int pilihan = scanner.nextInt();
-                scanner.nextLine(); // Konsumsi newline
+                scanner.nextLine(); 
 
                 if (pilihan > 0 && pilihan <= daftarPenerbangan.size()) {
                     pesananPenerbangan = daftarPenerbangan.get(pilihan - 1);
